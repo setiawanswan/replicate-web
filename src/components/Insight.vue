@@ -1,5 +1,5 @@
 <template>
-<div>
+<body>
     <div class="insight-section">
         <p class="insight-subtitle">Insight Terbaru</p>
         <p class="insight-title">Knowledge Sharing</p>
@@ -9,7 +9,7 @@
         <span class="letsee-text">Lihat Semua</span>
         <span class="">-></span>
     </div>
-</div>
+</body>
 </template>
 
 <script>
@@ -19,6 +19,10 @@ export default {
 </script>
 
 <style scoped>
+.body {
+    background-image: url("https://refactory.id/wp-content/uploads/2020/01/ripple-bg.png");
+}
+
 .insight-section {
     text-align: center;
     padding: 16px;

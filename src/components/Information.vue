@@ -1,7 +1,7 @@
 <template>
 <div>
-    <b-container>
-        <div>
+    <b-container :class="[$style.middle]">
+        <div :class="[$style.section]">
             <p :class="[$style.title]">Apa Yang Refactory Dapat Bantu?</p>
         </div>
         <b-row>
@@ -40,6 +40,14 @@ export default {
 </script>
 
 <style module>
+.middle{
+    text-align: center;
+}
+
+.section {
+    padding: 4%;
+}
+
 .title {
     color: #0B162B;
     font-family: "Raleway", Sans-serif;
