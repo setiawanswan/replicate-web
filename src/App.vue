@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <Navbar msg="Ini Navbar" />
     <Homepage />
     <Information />
     <Insight />
@@ -10,7 +9,6 @@
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
 import Homepage from './components/Homepage.vue'
 import Information from './components/Information.vue'
 import Insight from './components/Insight.vue'
@@ -22,7 +20,6 @@ export default {
   name: 'App',
   components: {
     Homepage,
-    Navbar,
     Information,
     Insight,
     Corporate,

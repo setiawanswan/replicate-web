@@ -5,9 +5,7 @@
         <p class="insight-title">Knowledge Sharing</p>
     </div>
     <div class="letsee-section">
-        <a href=""></a>
-        <span class="letsee-text">Lihat Semua</span>
-        <span class="">-></span>
+        <a href=""><p class="letsee-text">Lihat Semua</p></a>
     </div>
 </body>
 </template>
@@ -51,9 +49,10 @@ export default {
     font-family: "Raleway", Sans-serif;
     font-size: 18px;
     font-weight: 400;
-    font-style: normal;
     line-height: 22px;
-    fill: #007BFF;
     color: #007BFF;
+    text-align: center;
+    padding: 3%;
+    text-decoration: none;
 }
 </style>>

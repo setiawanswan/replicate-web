@@ -4,11 +4,28 @@
         <p class="title">as seen us</p>
     </div>
     <div class="corporate-element">
-        <img class="logo" alt="CNN Logo" src="../assets/cnn_logo.png">
-        <img class="logo" alt="Metro Logo" src="../assets/metro_logo.png">
-        <img class="logo" alt="Beritasatu Logo" src="../assets/beritasatu_logo.png">
-        <img class="logo" alt="Kumparan Logo" src="../assets/kumparan_logo.png">
-        <img class="logo" alt="IDN Logo" src="../assets/idn_logo.png">
+        <b-container>
+            <b-row>
+                <b-col>
+                    <img class="logo" alt="CNN Logo" src="../assets/cnn_logo.png">
+                </b-col>
+                <b-col> 
+                    <img class="logo" alt="Metro Logo" src="../assets/metro_logo.png">
+                </b-col>
+                <b-col>
+                    <img class="logo" alt="Beritasatu Logo" src="../assets/beritasatu_logo.png">
+                </b-col>
+                <b-col>
+                    <img class="logo" alt="Kumparan Logo" src="../assets/kumparan_logo.png">
+                </b-col>
+                <b-col>
+                    <img class="logo" alt="IDN Logo" src="../assets/idn_logo.png">
+                </b-col>
+                <b-col>
+                    <img class="logo" alt="IDN Logo" src="../assets/viva_logo.png">
+                </b-col>
+            </b-row>
+        </b-container>
         <!-- <img alt="Viva Logo" src="../assets/viva_logo.png"> -->
     </div>
 </div>
@@ -46,6 +63,6 @@ export default {
 
 .logo{
     max-width: 100%;
-    padding: 26px;
+    /* padding: 26px; */
 }
 </style>

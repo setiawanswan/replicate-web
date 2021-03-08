@@ -1,55 +1,75 @@
 <template>
-  <body>
+  <div class="homepage-section">
     <b-container>
       <b-row>
         <b-col>
-          <div class="content">Empowering <span class="title">People </span> <br>
-              Through Programming
+          <div class="content">
+            <p> 
+              {{title}} <br> <strong style="color: #e48800"> {{subTitle}} </strong>
+            </p>
           </div>
           <div class="subcontent">
-            Refactory adalah perusahaan edukasi dan teknologi yang menyediakan layanan lengkap berupa course maupun custom training yang materinya dapat disesuaikan dengan kebutuhan teknologi dan bisnis perusahaan Anda.
+            <p>{{content}}</p>
+          </div>
+          <div>
+            <a href="#" class="link">Pelajari Lebih Lanjut <b-icon icon="chevron-right"></b-icon> </a>
           </div>
         </b-col>
         <b-col></b-col>
       </b-row>
     </b-container>
-  </body>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Header',
-  props: {
+  
+  data(){
+    return {
+      title: 'Pekerjaan anda terdampak pandemi?',
+      subTitle: 'Kami Bisa Membantu!',
+      content: 'Lebih dari 3.5 juta orang di Indonesia kehilangan pekerjaan karena pandemi. Refactory berkomitmen membantu mereka yang terdampak pandemi untuk belajar pemrograman secara daring hingga siap bekerja dan disalurkan di industri yang terus berkembang. Dari awam sampai mampu!'
+    }
   }
 }
 </script>
 
 <style scoped>
-body{
-  padding: 15% 10%;
+
+
+.homepage-section{
+  padding: 12%;
   width: 100%;
-  background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%);
-  /* background-image: url("https://refactory.id/wp-content/uploads/2020/01/hero-homepage.jpg"); */
-  background-color: transparent;
-  /* opacity: 0.75 */
+  /* background-image: linear-gradient(110deg, #00256C 10%, #04ACA4 90%); */
+  background-image: url(https://refactory.id/wp-content/uploads/2021/01/Space12-1.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
 }
 
 .content{
   color: #FFFFFF;
-    font-family: "Raleway", Sans-serif;
-    font-size: 48px;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 50px;
+    /* font-family: Sans-serif; */
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48px;
 }
 .subcontent{
   color: #FFFFFF;
-    font-family: "Montserrat", Sans-serif;
-    font-size: 16px;
+    /* font-family: "Montserrat", Sans-serif; */
+    font-size: 14px;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    text-align: justify;
 }
-.title {
-  color: #e48800
+
+.link{
+  /* font-family: "Montserrat", Sans-serif; */
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: underline;
 }
 </style>
