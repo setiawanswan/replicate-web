@@ -1,58 +1,65 @@
 <template>
-<body>
-    <div class="insight-section">
-        <p class="insight-subtitle">Insight Terbaru</p>
-        <p class="insight-title">Knowledge Sharing</p>
-    </div>
-    <div class="letsee-section">
-        <a href=""><p class="letsee-text">Lihat Semua</p></a>
-    </div>
-</body>
+<div class="insight-section">
+    <b-container>
+        <b-row>
+            <b-col>
+                <div>
+                    <h2 class="title-insight"> {{ titleInsight }} </h2>
+                </div>
+                <div>
+                    <h2 class="title-knowledge"> {{titleKnowledge}} </h2>
+                </div>
+            </b-col>
+        </b-row>
+        <b-row>
+            <b-col>
+                adasd
+            </b-col>
+            <b-col>
+adasd
+            </b-col>
+            <b-col>
+adas
+            </b-col>
+        </b-row>
+    </b-container>
+</div>
 </template>
 
 <script>
 export default {
-    nama: "Insight"
+    data(){
+        return{
+            titleInsight: 'Insight Terbaru',
+            titleKnowledge: 'Knowledge Sharing'
+        }
+    }
 }
 </script>
 
 <style scoped>
-.body {
-    background-image: url("https://refactory.id/wp-content/uploads/2020/01/ripple-bg.png");
-}
-
-.insight-section {
+.insight-section{
     text-align: center;
-    padding: 16px;
+    padding: 6%;
+    background-color: #F4F5F6;
 }
 
-.insight-subtitle{
-    color: rgba(11, 22, 43, 0.6);
+.title-insight{
+    color: #718096;
     font-family: "Raleway", Sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
     font-style: normal;
-    margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
-.insight-title{
-    color: #0B162B;
+.title-knowledge{
+    color: #000000;
     font-family: "Raleway", Sans-serif;
-    font-size: 28px;
+    font-size: 48px;
     font-weight: 700;
     font-style: normal;
-    margin-bottom: 20px;
 }
 
-.letsee-text{
-    font-family: "Raleway", Sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 22px;
-    color: #007BFF;
-    text-align: center;
-    padding: 3%;
-    text-decoration: none;
-}
-</style>>
+</style>

@@ -1,83 +1,119 @@
 <template>
-<div>
-    <b-container :class="[$style.middle]">
-        <div :class="[$style.section]">
-            <p :class="[$style.title]">Apa Yang Refactory Dapat Bantu?</p>
-        </div>
+<div class="alumni-section">
+    <b-container>
         <b-row>
             <b-col>
-                <img :class="[$style.logo]" alt="Approval Logo" src="../assets/material_approval.png">
-                <p :class="[$style.subtitle]">Memperkuat Tim Engineer Anda</p>
-                <p :class="[$style.content]">
-                    Bisnis di jaman modern membutuhkan keterampilan 
-                    pengembangan terbaik untuk meningkatkan skala 
-                    produk. 
-                    Kami dapat mempersiapkan course dan juga 
-                    dapat menyediakan tim yang menangani kebutuhan digital Anda.
-                </p>
-            </b-col>
-            <b-col>
-                <img :class="[$style.logo]" alt="Bolt Logo" src="../assets/material_bolt.png">
-                <p :class="[$style.subtitle]">Wujudkan Software Impian Anda</p>
-                <p :class="[$style.content]">
-                    Kami adalah perusahaan One-Stop IT Solution untuk 
-                    proyek Anda, 
-                    membantu di setiap tahap mulai dari 
-                    menyusun ide, melalui desain dan pengembangan 
-                    aplikasi seluler, situs web dan aplikasi desktop, hingga 
-                    peluncuran produk
-                </p>
+                <div>
+                    <h2 class="title-alumni"> {{titleAlumni}} </h2>
+                </div>
+                <div>
+                    <h2 class="title-review-alumni"> {{titleReviewAlumni}} </h2>
+                </div>
+                <div class="title-ulas-alumni">
+                    {{ titleUlasAlumni }}
+                    <span> <a href="#" class="title-report-alumni"> <strong> {{ titleReportAlumni }}  </strong>  </a> </span>
+                </div>
             </b-col>
         </b-row>
-    </b-container>
+        <b-row>
+            
+                <b-col class="course-report">
+                    <span class="course-report-text">
+                        COURSE <br>
+                        REPORT
+                    </span>
+                </b-col>
+                <b-col>
+                    <div class="review-section">
+                        <b-icon icon="star-fill" style="color:#E89A01"></b-icon> 
+                        <b-icon icon="star-fill" style="color:#E89A01"></b-icon> 
+                        <b-icon icon="star-fill" style="color:#E89A01"></b-icon>
+                        <b-icon icon="star-fill" style="color:#E89A01"></b-icon> 
+                        <b-icon icon="star-fill" style="color:#E89A01"></b-icon>
+                        <span>
+                            <h2>4.74/5 Rating</h2>
+                        </span>
+                    </div>
+                </b-col>
+        </b-row>
+</b-container>
 </div>
 </template>
 
 <script>
 export default {
-    name : 'Information'
+    data(){
+        return{
+            titleAlumni: 'Temui Lulusan Kami',
+            titleReviewAlumni: 'Review',
+            titleUlasAlumni: 'Baca apa yang alumni ulas melalui',
+            titleReportAlumni: 'Course Report'
+        }
+    }
+
 }
 </script>
 
-<style module>
-.middle{
+<style scoped>
+.alumni-section{
     text-align: center;
+    padding: 6%;
+    background-color: #F4F5F6;
 }
 
-.section {
-    padding: 4%;
-}
-
-.title {
-    color: #0B162B;
+.title-alumni{
+    color: rgba(11, 22, 43, 0.6);
     font-family: "Raleway", Sans-serif;
-    font-size: 38px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
     font-style: normal;
-    line-height: 42px;
+    line-height: 20px;
     letter-spacing: 2px;
 }
 
-.logo{
-    text-align: center;
+.title-review-alumni {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-.subtitle {
-    color: #0B162B;
+.title-ulas-alumni{
     font-family: "Raleway", Sans-serif;
-    font-size: 28px;
-    font-style: normal;
-    line-height: 32px;
-    text-align: center;
-}
-
-.content {
-    color: rgba(11, 22, 43, 0.6);
-    font-family: "Montserrat", Sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 400;
     font-style: normal;
-    line-height: 30px;
-    text-align: center;
+    line-height: 60px;
+    letter-spacing: 0.5px;
 }
-</style>
+
+.title-report-alumni{
+    text-decoration: none;
+    /* font-weight: 800; */
+    color: #333333;
+}
+
+.course-report{
+    text-align: right;
+}
+
+.review-section{
+    text-align: left;
+}
+
+.course-report-text{
+    font-family: "Montserrat", Sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    font-style: normal;
+    line-height: 0.8em;
+    letter-spacing: -2.3px;
+    fill: #B4B6B9;
+    color: #B4B6B9;
+    background-color: #14141400;
+    border-radius: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    
+}
+</style>>
